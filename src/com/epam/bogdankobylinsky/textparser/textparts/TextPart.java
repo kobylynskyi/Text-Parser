@@ -7,7 +7,7 @@ import java.util.Objects;
  * getting it. Also overrided method for calculating the hashCode of TextPart
  * object.
  *
- * @author Bogdan
+ * @author Bogdan Kobylinsky.
  */
 public class TextPart {
 

@@ -4,7 +4,7 @@ package com.epam.bogdankobylinsky.textparser.textparts;
  * Defines one of the smallest part of text - the sign. Contains the text of
  * sign and method for adding new Sign in the defined Set.
  *
- * @author Bogdan
+ * @author Bogdan Kobylinsky.
  */
 public class Sign extends TextPart {
 

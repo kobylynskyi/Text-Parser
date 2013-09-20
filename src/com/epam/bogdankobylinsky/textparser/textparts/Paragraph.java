@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Defines the separate part (paragraph) of the
  * {@link com.epam.bogdankobylinsky.textparser.textparts.Text}.
  *
- * @author Bogdan
+ * @author Bogdan Kobylinsky.
  */
 public class Paragraph extends TextPart {
 

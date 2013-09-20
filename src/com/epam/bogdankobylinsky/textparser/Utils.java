@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.epam.bogdankobylinsky.textparser;
 
 import com.epam.bogdankobylinsky.textparser.textparts.Paragraph;
@@ -23,7 +19,7 @@ import java.util.Map;
  * Contains the utilities for assembling the text from the parts and finding the
  * unique words in the sentence.
  *
- * @author Bogdan
+ * @author Bogdan Kobylinsky.
  */
 public class Utils {
 

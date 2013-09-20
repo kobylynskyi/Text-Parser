@@ -1,7 +1,6 @@
 package com.epam.bogdankobylinsky.textparser;
 
 import java.io.BufferedReader;
-import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -10,7 +9,7 @@ import java.util.Arrays;
 /**
  * Contains scanning utilities: reading the file and the number from console.
  *
- * @author Bogdan
+ * @author Bogdan Kobylinsky.
  */
 public class Scanner {
 
@@ -29,7 +28,7 @@ public class Scanner {
         BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(FILE_NAME), "UTF-8"));
         String ls = System.getProperty("line.separator");
         StringBuilder stringBuilder = new StringBuilder();
-        String line = null;
+        String line;
         while ((line = reader.readLine()) != null) {
             stringBuilder.append(line).append(ls);
         }

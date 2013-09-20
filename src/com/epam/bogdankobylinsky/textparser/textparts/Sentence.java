@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Defines the Sentence as the part of Paragraph. Contains the list of words and
  * punctuation and special signs.
  *
- * @author Bogdan
+ * @author Bogdan Kobylinsky.
  */
 public class Sentence extends TextPart {
 

@@ -12,7 +12,7 @@ import com.epam.bogdankobylinsky.textparser.textparts.Word;
  * paragraphs onto sentences, sentences onto words and punctuation and special
  * signs.
  *
- * @author Bogdan
+ * @author Bogdan Kobylinsky.
  */
 public class Parser {
 

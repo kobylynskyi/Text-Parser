@@ -3,6 +3,11 @@ package com.epam.bogdankobylinsky.textparser;
 import com.epam.bogdankobylinsky.textparser.textparts.Text;
 import java.io.IOException;
 
+/**
+ * Entry point of the program.
+ *
+ * @author Bogdan Kobylinsky.
+ */
 public class Main {
 
     /**

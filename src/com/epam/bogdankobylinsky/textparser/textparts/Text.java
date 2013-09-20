@@ -6,9 +6,9 @@ import java.util.HashSet;
 
 /**
  * Defines the text. Contains the String of text, list of paragraphs, containers
- * for WOrd and Sign objects.
+ * for Word and Sign objects.
  *
- * @author Bogdan
+ * @author Bogdan Kobylinsky.
  */
 public class Text {
 

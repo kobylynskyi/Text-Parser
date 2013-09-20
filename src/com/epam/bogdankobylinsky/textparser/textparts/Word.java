@@ -6,7 +6,7 @@ import java.util.HashMap;
  * Defines one of the smallest part of text - the word. Contains the text of
  * word and method for adding new Word in the defined Map.
  *
- * @author Bogdan
+ * @author Bogdan Kobylinsky.
  */
 public class Word extends TextPart {
 

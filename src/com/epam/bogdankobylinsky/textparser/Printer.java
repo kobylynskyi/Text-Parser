@@ -10,7 +10,7 @@ import java.util.HashMap;
  * Contains the printing utilities: printing special messages,
  * text,sentences,words and others on the console.
  *
- * @author Bogdan
+ * @author Bogdan Kobylinsky.
  */
 public class Printer {
 
@@ -100,8 +100,7 @@ public class Printer {
      * Printing the menu.
      */
     public static void printMenu() {
-        print(
-                "\n1 - Scan and parse file (CLASSPATH\\" + Scanner.FILE_NAME + ").\n"
+        print("\n1 - Scan and parse file (CLASSPATH\\" + Scanner.FILE_NAME + ").\n"
                 + "2 - Show separate sentences.\n"
                 + "3 - Show all words sorted by frequency.\n"
                 + "4 - Find a word in the first sentence, which is not present in any of other sentences.\n"
