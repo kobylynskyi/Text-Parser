@@ -71,21 +71,33 @@ public class Parser {
             paragraphLength = paragraphText.length();
             lastCut = 0;
             for (int i = 0; i < paragraphLength - 2; i++) {
-                // If occurs the sentence separator and 
-                // there is space after it and 
-                // the next symbol is uppercase than creating new paragraph:
-                // Also skipping the title numbers in the text.
-                if (".?!".indexOf(paragraphText.charAt(i)) >= 0
-                        && Character.isWhitespace(paragraphText.charAt(i + 1))
-                        && Character.isUpperCase(paragraphText.charAt(i + 2))
-                        && !paragraphText.substring(lastCut, i + 1).matches("^[﻿0-9. \t]+$")
-                        && i - lastCut > 2) {
+                if (separateSentence(paragraphText, lastCut, i)) {
                     paragraph.addSentence(new Sentence(paragraphText.substring(lastCut, i + 1)));
                     lastCut = i + 2;
                 }
             }
             paragraph.addSentence(new Sentence(paragraphText.substring(lastCut, paragraphLength)));
         }
+    }
+
+    /**
+     * Method return <b>true</b> if occurs the sentence separator and there is
+     * space after it and the next symbol is uppercase. Also skipping the title
+     * numbers in the text.
+     *
+     * @param paragraphText is the text that is gonna be separated.
+     * @param lastCut is the index of last cutted sentence
+     * @param i is current position of index
+     * @return <b>true</b> if occurs the sentence separator and there is space
+     * after it and the next symbol is uppercase. Also skipping the title
+     * numbers in the text. Otherwise - <b>false</b>.
+     */
+    private static boolean separateSentence(String paragraphText, int lastCut, int i) {
+        return ".?!".indexOf(paragraphText.charAt(i)) >= 0
+                && Character.isWhitespace(paragraphText.charAt(i + 1))
+                && Character.isUpperCase(paragraphText.charAt(i + 2))
+                && !paragraphText.substring(lastCut, i + 1).matches("^[﻿0-9. \t]+$")
+                && i - lastCut > 2;
     }
 
     /**
